@@ -31,8 +31,13 @@ class Player(GameSprite):
             self.rect.y -= self.speed
         if key_pressed[K_DOWN] and self.rect.x1 < win_height:
             self.rect.y += self.speed
+    def update(self):
+        self.rect.y +=self.speed
+        self.rect.y +=self.speed
+        if c
 player_l =Player('.png',50,400,5)
 player_r =Player('.png',50,400,5)
+player_l =Player('.png',50,400,5)
 ball = Player('ball.png',50,400,50)
 font1 =font.Font("Arial",70)
 win1 = font.render('Ура',True,(255,215,0))
